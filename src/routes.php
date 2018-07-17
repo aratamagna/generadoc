@@ -10,3 +10,16 @@ $app->get('/', function (Request $request, Response $response, array $args) {
 
     return $this->renderer->render($response, 'index.html', $args);
 });
+
+/*
+$app->get('//{id}', function ($request, $response, $args) {});
+$app->post('/', function ($request, $response, $args) {});
+*/
+
+$app->get('/doc/{id}', function ($request, $response, $args) {
+  $docid = $args['id'];
+});
+
+$app->post('/doc', function ($request, $response, $args) {
+  $response->withJson($data, 200);
+});
