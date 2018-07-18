@@ -21,7 +21,7 @@ $app->get('/doc/{id}', function ($request, $response, $args) {
   $rqstm = new RequestMapper();
   $result = $rqstm->get($this->api, "core.generadoc", "form,getById", $args);
   if ($result->code == 200){
-    return $response->withJson($result->raw_body, $result->code);
+    return $response->withJson($result->body, $result->code);
   } else {
     return $response->withStatus($result->code);
   }
