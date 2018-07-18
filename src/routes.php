@@ -20,7 +20,11 @@ $app->get('/doc/{id}', function ($request, $response, $args) {
   $docid = $args['id'];
   $rqstm = new RequestMapper();
   $result = $rqstm->get($this->api, "core.generadoc", "form,getById", $args);
-  return $response->withJson($result->raw_body, $result->code);
+  if ($result->code == 200){
+    return $response->withJson($result->raw_body, $result->code);
+  } else {
+    return $response->withStatus(404);
+  }
 });
 
 $app->post('/doc', function ($request, $response, $args) {
