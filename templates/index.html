@@ -48,13 +48,80 @@
               Con Generadoc puedes elaborar tus documentos a través de un simple formulario.
             </strong>
           </p>
-          <button type="button" class="btn btn-primary my-2">
+          <a class="btn btn-primary" href="#" role="button">
             Comenzar
-          </button>
+          </a>
         </div>
       </div>
     </div>
   </header>
+
+  <div class="container">
+    <div class="row">
+      <section>
+        <div class="wizard">
+          <div class="wizard-inner">
+            <div class="connecting-line"></div>
+            <ul class="nav nav-tabs" role="tablist">
+
+              <li role="presentation" class="active">
+                <a href="#step1" data-toggle="tab" aria-controls="step1" role="tab" title="Paso 1">
+                  <span class="round-tab">
+                    <i class="glyphicon glyphicon-folder-open"></i>
+                  </span>
+                </a>
+              </li>
+              <li role="presentation" class="disabled">
+                <a href="#step2" data-toggle="tab" aria-controls="step2" role="tab" title="Paso 2">
+                  <span class="round-tab">
+                    <i class="glyphicon glyphicon-pencil"></i>
+                  </span>
+                </a>
+              </li>
+              <li role="presentation" class="disabled">
+                <a href="#step3" data-toggle="tab" aria-controls="step3" role="tab" title="Paso 3">
+                  <span class="round-tab">
+                    <i class="glyphicon glyphicon-picture"></i>
+                  </span>
+                </a>
+              </li>
+
+            </ul>
+          </div>
+
+          <form role="form">
+            <div class="tab-content">
+              <div class="tab-pane active" role="tabpanel" id="step1">
+                <h3>Paso 1</h3>
+                <p class="lead">Seleccione el documento a generar</p>
+                <ul class="list-inline pull-right">
+                  <li><button type="button" class="btn btn-primary next-step">Siguiente</button></li>
+                </ul>
+              </div>
+              <div class="tab-pane" role="tabpanel" id="step2">
+                <h3>Paso 2</h3>
+                <p class="lead">Ingrese los datos en el formulario</p>
+                <ul class="list-inline pull-right">
+                  <li><button type="button" class="btn btn-default prev-step">Atrás</button></li>
+                  <li><button type="button" class="btn btn-primary next-step">Siguiente</button></li>
+                </ul>
+              </div>
+              <div class="tab-pane" role="tabpanel" id="step3">
+                <h3>Paso 3</h3>
+                <p class="lead">Presione el botón Generar</p>
+                <ul class="list-inline pull-right">
+                  <li><button type="button" class="btn btn-default prev-step">Previous</button></li>
+                  <li><button type="button" class="btn btn-default next-step">Skip</button></li>
+                  <li><button type="button" class="btn btn-primary btn-info-full next-step">Save and continue</button></li>
+                </ul>
+              </div>
+              <div class="clearfix"></div>
+            </div>
+          </form>
+        </div>
+      </section>
+    </div>
+  </div>
 
   <!-- Image Showcases -->
   <section class="showcase">
@@ -149,19 +216,11 @@
       <div class="col-lg-6 h-100 text-center text-lg-left my-auto">
         <ul class="list-inline mb-2">
           <li class="list-inline-item">
-            <a href="#">About</a>
+            <a href="#">Contacto</a>
           </li>
           <li class="list-inline-item">&sdot;</li>
           <li class="list-inline-item">
-            <a href="#">Contact</a>
-          </li>
-          <li class="list-inline-item">&sdot;</li>
-          <li class="list-inline-item">
-            <a href="#">Terms of Use</a>
-          </li>
-          <li class="list-inline-item">&sdot;</li>
-          <li class="list-inline-item">
-            <a href="#">Privacy Policy</a>
+            <a href="#">Terminos de Uso</a>
           </li>
         </ul>
         <p class="text-muted small mb-4 mb-lg-0">&copy; Generadoc</p>
