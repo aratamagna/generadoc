@@ -57,6 +57,25 @@
   </header>
 
   <div class="container">
+    <div id="smartwizard">
+      <ul>
+        <li><a href="#step-1">1<br /><small>Step description</small></a></li>
+        <li><a href="#step-2">2<br /><small>Step description</small></a></li>
+        <li><a href="#step-3">3<br /><small>Step description</small></a></li>
+      </ul>
+
+      <div>
+        <div id="step-1" class="">
+          Step Content
+        </div>
+        <div id="step-2" class="">
+          Step Content
+        </div>
+        <div id="step-3" class="">
+          Step Content
+        </div>
+      </div>
+    </div>
   </div>
 
   <!-- Image Showcases -->
@@ -187,6 +206,13 @@
 <!-- Bootstrap core JavaScript -->
 <script src="vendor/jquery/jquery.min.js"></script>
 <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+
+    $('#smartwizard').smartWizard();
+
+});
+</script>
 
 </body>
 
