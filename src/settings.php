@@ -47,7 +47,7 @@ return [
                   'route' => '/form/{id}',
                   'args' => ["id"]
                 ]
-              ]
+              ],
               'input' => [],
               'doc' => [
                 'create' => [
