@@ -23,7 +23,7 @@ $app->get('/doc/{id}', function ($request, $response, $args) {
   if ($result->code == 200){
     return $response->withJson($result->raw_body, $result->code);
   } else {
-    return $response->withStatus(404);
+    return $response->withStatus($result->code);
   }
 });
 
