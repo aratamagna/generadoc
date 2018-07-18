@@ -1,6 +1,7 @@
 $(function() {
   init(1);
-  initapp()
+  initapp();
+  window.scrollTo(0, 0);
   });
 
   var doc = 1;
