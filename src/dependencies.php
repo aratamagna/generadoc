@@ -20,4 +20,4 @@ $container['logger'] = function ($c) {
 
 $container['api'] = function ($c) {
   $api = $c->get('settings')['api'];
-}
+};
