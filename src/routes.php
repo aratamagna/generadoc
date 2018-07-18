@@ -18,8 +18,11 @@ $app->post('/', function ($request, $response, $args) {});
 
 $app->get('/doc/{id}', function ($request, $response, $args) {
   $docid = $args['id'];
+  $rqstm = new RequestMapper();
+  $result = $rqstm->get($this->api, "core.generadoc", "form,getById", $docid);
+  $response->withJson($result, 200);
 });
 
 $app->post('/doc', function ($request, $response, $args) {
-  $response->withJson($data, 200);
+  // $response->withJson($data, 200);
 });
