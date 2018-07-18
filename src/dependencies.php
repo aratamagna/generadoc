@@ -19,5 +19,5 @@ $container['logger'] = function ($c) {
 };
 
 $container['api'] = function ($c) {
-  $api = $c->get('settings')['api'];
+  return $c->get('settings')['api'];
 };
