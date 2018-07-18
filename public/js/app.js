@@ -1,19 +1,5 @@
 $(function() {
-  init(1);
-  $('#smartwizard').smartWizard({
-    autoAdjustHeight:false,
-    cycleSteps: false,
-    lang: {  // Language variables
-      next: 'Siguiente',
-      previous: 'Volver'
-    },
-    toolbarSettings: {
-      toolbarPosition: 'bottom',
-      toolbarButtonPosition: 'right',
-      showNextButton: true,
-      showPreviousButton: true
-    },
-    theme: 'dots'});
+  init(1)
   });
 
   var doc = 1;
@@ -27,6 +13,24 @@ $(function() {
         $(".field_container").append($(field));
       });
     }, "json");
+  }
+
+  function initapp() {
+    $('#smartwizard').smartWizard({
+      autoAdjustHeight:false,
+      cycleSteps: false,
+      lang: {  // Language variables
+        next: 'Siguiente',
+        previous: 'Volver'
+      },
+      toolbarSettings: {
+        toolbarPosition: 'bottom',
+        toolbarButtonPosition: 'right',
+        showNextButton: true,
+        showPreviousButton: true
+      },
+      theme: 'dots'});
+    });
   }
 
   $("#smartwizard").on("showStep", function(e, anchorObject, stepNumber, stepDirection) {
