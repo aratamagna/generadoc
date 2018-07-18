@@ -14,7 +14,7 @@ $(function() {
       showNextButton: true,
       showPreviousButton: true
     },
-    theme: 'dots');
+    theme: 'dots'});
   });
 
   function init(id){
