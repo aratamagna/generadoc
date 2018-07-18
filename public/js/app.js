@@ -16,6 +16,8 @@ $(function() {
     theme: 'dots'});
   });
 
+  var doc = 1;
+
   function init(id){
     $.get( "doc/"+id, function( data ) {
       form = jQuery.parseJSON(data);
@@ -26,3 +28,9 @@ $(function() {
       });
     }, "json");
   }
+
+  $("#smartwizard").on("showStep", function(e, anchorObject, stepNumber, stepDirection) {
+    if(stepNumber == 1){
+      init(doc);
+    }
+  });
