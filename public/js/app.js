@@ -5,5 +5,5 @@ $(function() {
 function init(id){
   $.get( "doc/"+id, function( data ) {
     $("#doc_title").text( ""+data.name );
-  });
+  }, "json");
 }
