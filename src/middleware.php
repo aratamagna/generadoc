@@ -26,9 +26,7 @@ class RequestMapper {
       $url = str_replace("{".$key."}", $value, $url);
     }
     $response = Unirest\Request::get($url, $headers, $parameters = null);
-    echo $response->raw_body;
     return $response;
   }
-
   public function post() {}
   }
