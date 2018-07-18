@@ -64,7 +64,7 @@ return [
                 'list' => [
                   'headers' => [
                     'Accept' => 'application/json'
-                  ]
+                  ],
                   'method' => 'get',
                   'route' => '/template',
                   'args' => []
