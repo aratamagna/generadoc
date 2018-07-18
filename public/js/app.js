@@ -1,14 +1,14 @@
 $(function() {
   init(1);
   $('#smartwizard').smartWizard({
-    autoAdjustHeight:true,
+    autoAdjustHeight:false,
     cycleSteps: false,
     lang: {  // Language variables
       next: 'Siguiente',
       previous: 'Volver'
     },
     toolbarSettings: {
-      toolbarPosition: 'bottom',
+      toolbarPosition: 'top',
       toolbarButtonPosition: 'right',
       showNextButton: true,
       showPreviousButton: true
