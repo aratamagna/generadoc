@@ -1,7 +1,6 @@
 $(function() {
   init(1);
   $('#smartwizard').smartWizard({
-    selected: 0,
     autoAdjustHeight:true,
     cycleSteps: false,
     lang: {  // Language variables
