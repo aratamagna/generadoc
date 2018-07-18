@@ -31,7 +31,6 @@ $(function() {
         showPreviousButton: true
       },
       theme: 'dots'});
-    });
   }
 
   $("#smartwizard").on("showStep", function(e, anchorObject, stepNumber, stepDirection) {
