@@ -8,7 +8,7 @@ $(function() {
       previous: 'Volver'
     },
     toolbarSettings: {
-      toolbarPosition: 'top',
+      toolbarPosition: 'bottom',
       toolbarButtonPosition: 'right',
       showNextButton: true,
       showPreviousButton: true
