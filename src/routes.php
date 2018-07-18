@@ -6,15 +6,23 @@ use Slim\Http\Response;
 // Routes
 
 $app->get('/', function (Request $request, Response $response, array $args) {
-    $this->logger->info("");
+  $this->logger->info("");
 
-    return $this->renderer->render($response, 'index.html', $args);
+  return $this->renderer->render($response, 'index.html', $args);
 });
 
 /*
 $app->get('//{id}', function ($request, $response, $args) {});
 $app->post('/', function ($request, $response, $args) {});
 */
+
+$app->get('/doc', function ($request, $response, $args) {
+  return $this->renderer->render($response, 'app.html', $args);
+});
+
+$app->post('/doc', function ($request, $response, $args) {
+  // $response->withJson($data, 200);
+});
 
 $app->get('/doc/{id}', function ($request, $response, $args) {
   $docid = $args['id'];
@@ -25,8 +33,4 @@ $app->get('/doc/{id}', function ($request, $response, $args) {
   } else {
     return $response->withStatus($result->code);
   }
-});
-
-$app->post('/doc', function ($request, $response, $args) {
-  // $response->withJson($data, 200);
 });
