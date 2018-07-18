@@ -25,7 +25,7 @@ return [
                 'list' => [
                   'headers' => [
                     'Accept' => 'application/json'
-                  ]
+                  ],
                   'method' => 'get',
                   'route' => '/form',
                   'args' => []
@@ -34,7 +34,7 @@ return [
                   'headers' => [
                     'Accept' => 'application/json',
                     'Content-Type' => 'application/json'
-                  ]
+                  ],
                   'method' => 'post',
                   'route' => '/form',
                   'args' => []
@@ -42,7 +42,7 @@ return [
                 'getById' => [
                   'headers' => [
                     'Accept' => 'application/json'
-                  ]
+                  ],
                   'method' => 'get',
                   'route' => '/form/{id}',
                   'args' => ["id"]
@@ -54,7 +54,7 @@ return [
                   'headers' => [
                     'Accept' => 'application/json',
                     'Content-Type' => 'application/json'
-                  ]
+                  ],
                   'method' => 'post',
                   'route' => '/doc',
                   'args' => []
@@ -73,7 +73,7 @@ return [
                   'headers' => [
                     'Accept' => 'application/json',
                     'Content-Type' => 'application/json'
-                  ]
+                  ],
                   'method' => 'post',
                   'route' => '/template',
                   'args' => []
@@ -81,7 +81,7 @@ return [
                 'getById' => [
                   'headers' => [
                     'Accept' => 'application/json'
-                  ]
+                  ],
                   'method' => 'get',
                   'route' => '/template/{id}',
                   'args' => ["id"]
@@ -96,8 +96,7 @@ return [
             'pub_routes' => [
               'doc' => [
                 'base64' => [
-                  'headers' => [
-                  ]
+                  'headers' => [],
                   'method' => 'post',
                   'route' => '/doc/base64',
                   'args' => []
@@ -105,7 +104,7 @@ return [
                 'pdf' => [
                   'headers' => [
                     'Content-Type' => 'application/json'
-                  ]
+                  ],
                   'method' => 'post',
                   'route' => '/doc/pdf',
                   'args' => [
