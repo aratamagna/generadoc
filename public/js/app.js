@@ -1,5 +1,5 @@
 $(function() {
-  init(3)
+  init(1)
 });
 
 function init(id){
