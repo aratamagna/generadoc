@@ -25,8 +25,8 @@ class RequestMapper {
     foreach ($args as $key => $value) {
       $url = str_replace("{".$key."}", $value, $url);
     }
-    echo $url;
     $response = Unirest\Request::get($url, $headers, $parameters = null);
+    echo $response->raw_body;
     return $response;
   }
 
