@@ -1,5 +1,6 @@
 $(function() {
-  init(1)
+  init(1);
+  initapp()
   });
 
   var doc = 1;
