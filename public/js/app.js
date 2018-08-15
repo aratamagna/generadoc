@@ -18,25 +18,5 @@ $(function() {
   }
 
   function initapp() {
-    $('#smartwizard').smartWizard({
-      autoAdjustHeight:false,
-      cycleSteps: false,
-      lang: {  // Language variables
-        next: 'Siguiente',
-        previous: 'Volver'
-      },
-      toolbarSettings: {
-        toolbarPosition: 'bottom',
-        toolbarButtonPosition: 'right',
-        showNextButton: true,
-        showPreviousButton: true
-      },
-      theme: 'dots'});
+    var wizard = $("#wizard").steps();
   }
-
-  $("#smartwizard").on("showStep", function(e, anchorObject, stepNumber, stepDirection) {
-    $(".field_container").empty();
-    if(stepNumber == 1){
-      init(doc);
-    }
-  });
