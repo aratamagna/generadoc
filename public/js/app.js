@@ -31,6 +31,7 @@ function initapp() {
       }
       if (currentIndex == 1){
         if (newIndex == 0){
+          doc = 0;
           clear("field_container");
         }
       }
