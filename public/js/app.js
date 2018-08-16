@@ -20,7 +20,30 @@ function initapp() {
     headerTag: "h1",
     bodyTag: "section",
     transitionEffect: "slideLeft",
-    autoFocus: true
+    autoFocus: true,
+    onStepChanging: function (event, currentIndex, newIndex) {
+      if (currentIndex == 0){
+        if (doc == 0){
+          return false;
+        } else {
+          return true;
+        }
+      }
+      return true;
+    },
+    onStepChanged: function (event, currentIndex, priorIndex) { }},
+    onCanceled: function (event) { },
+    onFinishing: function (event, currentIndex) { return true; },
+    onFinished: function (event, currentIndex) { },
+    labels: {
+        cancel: "Cancelar",
+        current: "paso actual:",
+        pagination: "Paginacion",
+        finish: "Finalizar",
+        next: "siguiente",
+        previous: "anterior",
+        loading: "Cargando ..."
+    }
   });
 }
 
