@@ -59,6 +59,5 @@ function setDoc(id){
 }
 
 function clear(id){
-  console.log(2)
   $("."+id).remove();
 }
