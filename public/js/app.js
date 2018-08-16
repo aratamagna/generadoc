@@ -25,18 +25,14 @@ function initapp() {
       if (currentIndex == 0){
         if (doc == 0){
           return false;
-        } else {
-          return true;
+        }
+        if (priorIndex == 1){
+          clear("field_container");
         }
       }
       return true;
     },
     onStepChanged: function (event, currentIndex, priorIndex) {
-      if (currentIndex == 0){
-        if (priorIndex == 1){
-          clear("field_container");
-        }
-      }
     },
     onCanceled: function (event) { },
     onFinishing: function (event, currentIndex) { return true; },
