@@ -26,5 +26,6 @@ function initapp() {
 
 function setDoc(id){
   doc = id;
+  $(".field_container").remove();
   init(id);
 }
