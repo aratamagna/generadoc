@@ -33,8 +33,9 @@ function initapp() {
     },
     onStepChanged: function (event, currentIndex, priorIndex) {
       if (currentIndex == 0){
-        if (priorIndex == 1)
-        clear("field_container");
+        if (priorIndex == 1){
+          clear("field_container");
+        }
       }
     },
     onCanceled: function (event) { },
