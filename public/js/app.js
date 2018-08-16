@@ -32,7 +32,8 @@ function initapp() {
       return true;
     },
     onStepChanged: function (event, currentIndex, priorIndex) {
-      if (currentIndex == 1){
+      if (currentIndex == 0){
+        if (priorIndex == 1)
         clear("field_container");
       }
     },
