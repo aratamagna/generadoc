@@ -31,7 +31,11 @@ function initapp() {
       }
       return true;
     },
-    onStepChanged: function (event, currentIndex, priorIndex) { },
+    onStepChanged: function (event, currentIndex, priorIndex) {
+      if (currentIndex == 1){
+        clear("field_container");
+      }
+    },
     onCanceled: function (event) { },
     onFinishing: function (event, currentIndex) { return true; },
     onFinished: function (event, currentIndex) { },
