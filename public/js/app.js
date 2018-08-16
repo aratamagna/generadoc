@@ -1,10 +1,8 @@
 $(function() {
-  init(1);
   initapp();
-  window.scrollTo(0, 0);
 });
 
-var doc = 1;
+var doc = 0;
 
 function init(id){
   $.get( "doc/"+id, function( data ) {
@@ -24,4 +22,9 @@ function initapp() {
     transitionEffect: "slideLeft",
     autoFocus: true
   });
+}
+
+function setDoc(id){
+  doc = id;
+  init(id);
 }
