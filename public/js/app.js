@@ -26,7 +26,6 @@ function initapp() {
 }
 
 function setDoc(id){
-  clear("field_container");
   doc = id;
   init(id);
 }
