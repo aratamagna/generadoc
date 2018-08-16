@@ -58,6 +58,6 @@ function setDoc(id){
   init(id);
 }
 
-function clear(id){
-  $("."+id).remove();
+function clear(className){
+  $("."+className).empty();
 }
