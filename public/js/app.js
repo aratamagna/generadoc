@@ -13,7 +13,7 @@ function init(id){
       container = container+'<div class="form-group"><label>'+value.label+'</label><'+value.tag+' class="form-control" type="'+value.type+'" name="'+value.label+'"><small id="HelpBlock" class="form-text text-muted">'+value.help+'</small></div>';
     });
   }, "json");
-  console.log($(container));
+  console.log(container);
   $(".field_container").append($(container));
 }
 
