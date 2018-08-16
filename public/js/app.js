@@ -25,8 +25,12 @@ function initapp() {
       if (currentIndex == 0){
         if (doc == 0){
           return false;
+        } else {
+          return true;
         }
-        if (priorIndex == 1){
+      }
+      if (currentIndex == 1){
+        if (newIndex == 0){
           clear("field_container");
         }
       }
