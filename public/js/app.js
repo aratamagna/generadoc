@@ -56,6 +56,7 @@ function initapp() {
 function setDoc(id){
   doc = id;
   init(id);
+  $("#wizard").steps("next");
 }
 
 function clear(className){
