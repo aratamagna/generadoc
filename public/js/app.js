@@ -5,6 +5,7 @@ $(function() {
 var doc = 0;
 
 function init(id){
+  $(".field_container").remove();
   $.get( "doc/"+id, function( data ) {
     form = jQuery.parseJSON(data);
     $("#doc_title").text( form.name );
@@ -26,6 +27,5 @@ function initapp() {
 
 function setDoc(id){
   doc = id;
-  $(".field_container").remove();
   init(id);
 }
